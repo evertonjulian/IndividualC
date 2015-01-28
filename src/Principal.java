@@ -5,6 +5,9 @@ public class Principal {
 		String msgInicial = "Bem vindo à Livraria Sofia";
 		
 		System.out.println(msgInicial);
+		System.out.println("----------------------------");
+		
+		System.out.println("Cadastre um livro: ");
 	}
 
 }
