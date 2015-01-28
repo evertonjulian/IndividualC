@@ -6,7 +6,7 @@ public class Item {
 	private String autor;
 	private String descricao;
 	private int quantidade;
-	private float preco;
+	private double preco;
 	
 	public String getCodigo() {
 		return codigo;
@@ -38,10 +38,10 @@ public class Item {
 	public void setQuantidade(int quantidade) {
 		this.quantidade = quantidade;
 	}
-	public float getPreco() {
+	public double getPreco() {
 		return preco;
 	}
-	public void setPreco(float preco) {
+	public void setPreco(double preco) {
 		this.preco = preco;
 	}
 }

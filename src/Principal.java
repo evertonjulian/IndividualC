@@ -48,15 +48,15 @@ public class Principal {
 		}
 	}
 	
-	static double calculaDesconto(float preco, String cod){		
-		if (cod == "1") {
-			return preco * 0.8;
+	static double calculaDesconto(double preco, String cod){		
+		if (cod.equals("1")) {			
+			return (preco * 0.8);
 		}
-		else if (cod == "2") {
-			return preco * 0.85;
+		else if (cod.equals("2")) {
+			return (preco * 0.85);
 		}
-		else if (cod == "3") {
-			return preco * 0.9;
+		else if (cod.equals("3")) {
+			return (preco * 0.9);
 		}
 		else		
 			return preco;
@@ -84,7 +84,7 @@ public class Principal {
 		novoItem.setQuantidade(sc.nextInt());
 		
 		System.out.println("Digite o preço: ");
-		novoItem.setPreco(sc.nextFloat());
+		novoItem.setPreco(sc.nextDouble());
 		
 		return novoItem; 
 	}
